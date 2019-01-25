@@ -32,14 +32,14 @@ def move(my_history, their_history, my_score, their_score):
         return 'b' # Betray if they were severely punished last time,
     else:
         return 'c' # otherwise collude.
-    return 'c'
+
     
     b = 0
     c = 0 
    
     for i in their_history:
         if i == 'b':
-            b+=1
+            b += 1
         else:
             c += 1
     if b > c:
